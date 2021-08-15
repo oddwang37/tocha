@@ -1,0 +1,41 @@
+.steps
+    min-height: 580px
+    padding-top: 25px
+    padding-bottom: 125px
+    background: url('../img/3-steps/lines.svg') center 15% no-repeat
+    background: url('../img/3-steps/steps-bg.png') center bottom no-repeat
+    background-color: $gray
+.steps-wrapper
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+.steps-item
+    padding-top: 16px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 230px
+    &__circle
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        background-color: $violet-secondary
+        text-align: center
+        font-weight: 700
+        font-size: 30px
+        color: $violet
+        padding-top: 18px
+    &__subtitle
+        font-weight: 700
+        font-size: 18px
+        margin-top: 20px
+        text-align: center
+    &__descr
+        text-align: center
+        margin-top: 8px
+    &__img
+        width: 230px
+        margin-top: 60px
+    &:nth-child(2)
+        margin-top: 70px
+

@@ -11,7 +11,7 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "dist"
+            baseDir: "src"
         }
     });
 
@@ -23,7 +23,7 @@ gulp.task('styles', function() {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("dist/styles"))
+        .pipe(gulp.dest("src/styles"))
         .pipe(browserSync.stream());
 });
 
