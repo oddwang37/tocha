@@ -12,18 +12,24 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <div class="header-logo">
-                    <img src="icons/logo.png" alt="plane" class="header-logo__img">
-                    <div class="header-logo__sing">tocha</div>
-                </div>
-                <nav class="nav-menu">
+                <a href="index.html" class="logo">
+                    <div class="logo-wrapper">
+                            <img src="icons/logo.png" alt="бумажный самолётик" class="logo__img">
+                            <div class="logo__caption">tocha</div>
+                    </div>
+                </a>
+<!--                 <nav class="nav-menu">
                     <ul class="nav-list">
-                        <li class="nav-list__item nav-list__item_active"><a href="#" class="nav-list__link">Подключение</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__link">Оплата</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__link">Выход</a></li>
+                        <li class="nav-list__item nav-list__item_active"><a href="#" class="nav-list__link" modal-trigger>Подключение</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link" modal-trigger>Оплата</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link" modal-trigger>Контакты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link" modal-trigger>Выход</a></li>
                     </ul>
-                </nav>
+                </nav> -->
+                <div class="auth-panel">
+                    <button class="button button_login" modal-trigger>Вход</button>
+                    <button class="button button_registration" modal-trigger>Регистрация</button>
+                </div>
             </div>
         </div>
     </header>
@@ -38,7 +44,7 @@
                     <div class="promo__text">Общение с клиентами станет простым
                         и удобным, а подключение займет 5 минут.
                         Первый месяц — <span>бесплатно!</span></div>
-                    <button class="button button_violet">Подключить</button>
+                    <button class="button">Подключить</button>
                 </div>
             <img src="img/promo-illustration.svg" alt="chat on smartphone screen" class="promo__illustration">
             </div>
@@ -136,86 +142,79 @@
         <div class="container">
             <h3 class="title">Отзывы клиентов</h3>
             <div class="reviews-wrapper">
-                <div class="reviews-slide">
+                    <div class="reviews-slide">
+                            <div class="review-item__text">
+                                <div class="review-item__heading">Как же удобно!</div>
+                                <div class="review-item__descr">В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</div>
+                            </div>
+                            <div class="review-item__customer review-customer">
+                                <img src="img/reviews/user1.png" alt="photo of woman" class="review-customer__photo">
+                                <div class="review-customer__text">
+                                    <div class="review-customer__name">Анна Купер</div>
+                                    <div class="review-customer__site">romashka.ru</div>
+                                </div>
+                            </div>
+                            <div class="review-item__text">
+                                <div class="review-item__heading">Теперь мы идем в ногу со временем</div>
+                                <div class="review-item__descr">А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть.</div>
+                            </div>
+                            <div class="review-item__customer review-customer">
+                                <img src="img/reviews/user2.png" alt="photo of man" class="review-customer__photo">
+                                <div class="review-customer__text">
+                                    <div class="review-customer__name">Андрей Васильев</div>
+                                    <div class="review-customer__site">samogon-ont.ru</div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="reviews-slide">
                         <div class="review-item__text">
-                            <div class="review-item__heading">Как же удобно!</div>
-                            <div class="review-item__descr">В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</div>
+                            <div class="review-item__heading">Started from the bottom</div>
+                            <div class="review-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore obcaecati cumque fuga fugit tempore tenetur reiciendis ab natus illum voluptatum deserunt, placeat, omnis autem pariatur sit accusamus exercitationem, atque sed.</div>
                         </div>
                         <div class="review-item__customer review-customer">
-                            <img src="img/reviews/user1.png" alt="photo of woman" class="review-customer__photo">
+                            <img src="img/reviews/user2.png" alt="photo of woman" class="review-customer__photo">
                             <div class="review-customer__text">
-                                <div class="review-customer__name">Анна Купер</div>
-                                <div class="review-customer__site">romashka.ru</div>
+                                <div class="review-customer__name">Drake</div>
+                                <div class="review-customer__site">draketour.com</div>
                             </div>
                         </div>
                         <div class="review-item__text">
-                            <div class="review-item__heading">Теперь мы идем в ногу со временем</div>
-                            <div class="review-item__descr">А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть.</div>
+                            <div class="review-item__heading">Now we here</div>
+                            <div class="review-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia in nisi soluta reiciendis explicabo officiis saepe id laboriosam quaerat? Est voluptate illo consectetur tempore quo sapiente quidem voluptas esse.</div>
                         </div>
                         <div class="review-item__customer review-customer">
-                            <img src="img/reviews/user2.png" alt="photo of man" class="review-customer__photo">
+                            <img src="img/reviews/user1.png" alt="photo of man" class="review-customer__photo">
                             <div class="review-customer__text">
-                                <div class="review-customer__name">Андрей Васильев</div>
-                                <div class="review-customer__site">samogon-ont.ru</div>
+                                <div class="review-customer__name">Константин Константинов</div>
+                                <div class="review-customer__site">1xbet.ru</div>
                             </div>
                         </div>
                 </div>
-               <!--  <div class="reviews-slide">
-                    <div class="review-item">
-                        <div class="review-item__text">
-                            <div class="review-item__heading"></div>
-                            <div class="review-item__descr"></div>
-                        </div>
-                        <div class="review-item__customer review-customer">
-                            <img src="" alt="" class="review-customer__photo">
-                            <div class="review-customer__text">
-                                <div class="review-customer__name"></div>
-                                <div class="review-customer__site"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-item">
-                        <div class="review-item__text">
-                            <div class="review-item__heading"></div>
-                            <div class="review-item__descr"></div>
-                        </div>
-                        <div class="review-item__customer review-customer">
-                            <img src="" alt="" class="review-customer__photo">
-                            <div class="review-customer__text">
-                                <div class="review-customer__name"></div>
-                                <div class="review-customer__site"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="reviews-slide">
-                    <div class="review-item">
-                        <div class="review-item__text">
-                            <div class="review-item__heading"></div>
-                            <div class="review-item__descr"></div>
-                        </div>
-                        <div class="review-item__customer review-customer">
-                            <img src="" alt="" class="review-customer__photo">
-                            <div class="review-customer__text">
-                                <div class="review-customer__name"></div>
-                                <div class="review-customer__site"></div>
-                            </div>
+                    <div class="review-item__text">
+                        <div class="review-item__heading">Lorem ipsum dolor sit amet.</div>
+                        <div class="review-item__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut alias enim, perspiciatis quisquam voluptatem possimus nulla animi doloremque non pariatur, inventore deserunt reprehenderit fugiat cumque molestias velit quibusdam expedita natus.</div>
+                    </div>
+                    <div class="review-item__customer review-customer">
+                        <img src="img/reviews/user1.png" alt="photo of woman" class="review-customer__photo">
+                        <div class="review-customer__text">
+                            <div class="review-customer__name">Жанна Д'арк</div>
+                            <div class="review-customer__site">france.fr</div>
                         </div>
                     </div>
-                    <div class="review-item">
-                        <div class="review-item__text">
-                            <div class="review-item__heading"></div>
-                            <div class="review-item__descr"></div>
-                        </div>
-                        <div class="review-item__customer review-customer">
-                            <img src="" alt="" class="review-customer__photo">
-                            <div class="review-customer__text">
-                                <div class="review-customer__name"></div>
-                                <div class="review-customer__site"></div>
-                            </div>
+                    <div class="review-item__text">
+                        <div class="review-item__heading">Lorem ipsum dolor sit.</div>
+                        <div class="review-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis mollitia rem hic adipisci, ullam veritatis, labore quam perferendis quas animi consectetur dolore culpa a? Eaque sit quos explicabo! Fuga, architecto?</div>
+                    </div>
+                    <div class="review-item__customer review-customer">
+                        <img src="img/reviews/user1.png" alt="photo of man" class="review-customer__photo">
+                        <div class="review-customer__text">
+                            <div class="review-customer__name">Андрей Андреев</div>
+                            <div class="review-customer__site">samsung.com</div>
                         </div>
                     </div>
-                </div> -->
+            </div>
+                    
             </div>
             <div class="reviews-slider__navigation">
                 <div class="reviews-slider__circle reviews-slider__circle_active"></div>
@@ -241,10 +240,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
-                <div class="footer-logo">
-                    <img src="icons/logo.png" alt="бумажный самолётик" class="footer-logo__img">
-                    <div class="footer-logo__sign">tocha</div>
-                </div>
+                <a href="index.html" class="logo logo_footer">
+                    <div class="logo-wrapper">
+                            <img src="icons/logo.png" alt="бумажный самолётик" class="logo__img">
+                            <div class="logo__caption">tocha</div>
+                    </div>
+                </a>
                 <div class="footer-nav">
                     <div class="footer-menu">
                         <div class="footer-nav__title">Telegram чат</div>
@@ -275,16 +276,32 @@
             &#169; 2021 Tocha. Все права защищены
         </div>
     </section>
-    <div class="overlay">
+    <div class="overlay display-none">
         <div class="modal">
-            <div class="modal__content_">
+            <div class="modal__content modal_login display-none">
                 <div class="modal__title">Вход</div>
-                <div class="modal__close">×</div>
+                <img src="icons/modal-close.svg" class="modal__close">
                 <form action="#" class="form_login">
-                    input.form__input
+                    <input type="tel" placeholder="Телефон" class="form__input">
+                    <input type="password" placeholder="Пароль" class="form__input">
+                    <div class="form__reminder">Напомнить пароль</div>
+                    <button class="button button_modal">Войти</button>
+                </form>
+            </div>
+            <div class="modal__content modal_registration display-none">
+                <div class="modal__title">Регистрация</div>
+                <img src="icons/modal-close.svg" class="modal__close" modal-close>
+                <form action="#" class="form_login">
+                    <input name="phone" type="tel" placeholder="Телефон" class="form__input">
+                    <input name="email" type="email" placeholder="Электронная почта" class="form__input">
+                    <input name="password" type="password" placeholder="Пароль" class="form__input">
+                    <input name="repeat_pussword" type="password" placeholder="Повторите пароль" class="form__input">
+                    <button class="button button_modal">Войти</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
